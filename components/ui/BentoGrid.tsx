@@ -90,8 +90,8 @@ export const BentoGridItem = ({
                         />
                     )}
                     {id === 3 && <img
-                        src={'/mypic_wbg.png'}
-                        alt={'/mypic_wbg.png'}
+                        src={'./mypic_wbg.png'}
+                        alt={'./mypic_wbg.png'}
                         className={cn(imgClassName, "h-full w-[200px] opacity-30")}
                     />}
                 </div>
