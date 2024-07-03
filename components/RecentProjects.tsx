@@ -29,7 +29,7 @@ const RecentProjects = () => {
                             id={item.id}
                         >
                             <div
-                                className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] mb-10">
+                                className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] ">
                                 <div
                                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                                     style={{backgroundColor: "#13162D"}}
@@ -39,11 +39,11 @@ const RecentProjects = () => {
                                 <img
                                     src={item.img}
                                     alt="cover"
-                                    className="z-10 absolute bottom-0"
+                                    className="z-10 absolute bottom-0 rounded-2xl h-5/6 w-5/6 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                                 />
                             </div>
 
-                            <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                            <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 pt-5">
                                 {item.title}
                             </h1>
 
