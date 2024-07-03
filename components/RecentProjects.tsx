@@ -7,7 +7,7 @@ import {PinContainer} from "./ui/Pin";
 import {useState} from "react";
 
 const RecentProjects = () => {
-    const [currentProjectId, setCurrentProjectId] = useState(null);
+    const [currentProjectId, setCurrentProjectId] = useState(0);
 
     return (
         <div className="py-20">

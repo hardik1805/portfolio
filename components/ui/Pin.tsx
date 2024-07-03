@@ -20,7 +20,7 @@ export const PinContainer = ({
     className?: string;
     containerClassName?: string;
     currentProjectId: null | number;
-    setCurrentProjectId?: (id: number | null) => void;
+    setCurrentProjectId?: (id: number) => void;
     id: number;
 }) => {
     const [transform, setTransform] = useState(
@@ -31,13 +31,13 @@ export const PinContainer = ({
         setCurrentProjectId(id);
     };
     const onMouseLeave = () => {
-        setCurrentProjectId(null);
+        setCurrentProjectId(0);
     };
 
     useEffect(() => {
-        if (typeof currentProjectId === "number" && currentProjectId != id) {
+        if (currentProjectId !== 0 && currentProjectId != id) {
             setTransform("translate(-50%,-50%) rotateX(40deg) scale(0.8)");
-        } else if (currentProjectId === null) {
+        } else if (currentProjectId === 0) {
             setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
         }
     }, [currentProjectId]);
