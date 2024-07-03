@@ -20,7 +20,7 @@ export const PinContainer = ({
     className?: string;
     containerClassName?: string;
     currentProjectId: null | number;
-    setCurrentProjectId?: (id: number) => void;
+    setCurrentProjectId: (id: number) => void;
     id: number;
 }) => {
     const [transform, setTransform] = useState(

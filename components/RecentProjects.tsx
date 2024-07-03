@@ -24,9 +24,7 @@ const RecentProjects = () => {
                         <PinContainer
                             title={item.link}
                             href={item.link}
-                            setCurrentProjectId={(id) => {
-                                setCurrentProjectId(id)
-                            }}
+                            setCurrentProjectId={setCurrentProjectId}
                             currentProjectId={currentProjectId}
                             id={item.id}
                         >
