@@ -10,7 +10,7 @@ const RecentProjects = () => {
     const [currentProjectId, setCurrentProjectId] = useState(0);
 
     return (
-        <div className="py-20">
+        <div className="py-20" id={"projects"}>
             <h1 className="heading">
                 A small selection of{" "}
                 <span className="text-[#06b6d4]">recent projects</span>
