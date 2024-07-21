@@ -85,7 +85,7 @@ export const projects = [
         title: "Work Diary",
         des: "This Desktop app is designed to capture keyboard and mouse strokes of employee to monitor performance.",
         img: "./work-diary.png",
-        iconLists: ["./re.svg", "./electron.png", "js.png"],
+        iconLists: ["./re.svg", "./electron.png", "./js.png"],
         iconTitle: ["ReactJs", "ElectronJs", "Javascript"],
         link: "https://superworks.com/employee-monitoring-software/",
     }
