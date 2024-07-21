@@ -78,7 +78,7 @@ export const FloatingNav = ({
           >
             {/* remove hidden sm:block for the mobile responsive */}
             {navItem.icon && <img className={"h-6 rounded-md mr-1"} src={navItem.icon} alt={navItem.icon}/>}
-            <span className={`${idx === 0 && "font-semibold"} text-sm cursor-pointer`}>{navItem.name}</span>
+            <span className={`${idx === 0 && "font-semibold hidden sm:block"} text-sm cursor-pointer`}>{navItem.name}</span>
           </Link>
         ))}
         {/* remove this login btn */}

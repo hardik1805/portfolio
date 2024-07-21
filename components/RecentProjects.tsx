@@ -13,12 +13,12 @@ const RecentProjects = () => {
         <div className="py-20" id={"projects"}>
             <h1 className="heading">
                 A small selection of{" "}
-                <span className="text-[#06b6d4]">recent projects</span>
+                <span className="text-purple">recent projects</span>
             </h1>
             <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
                 {projects.map((item) => (
                     <div
-                        className="sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+                        className="sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-[470px] w-[80vw]"
                         key={item.id}
                     >
                         <PinContainer
@@ -29,7 +29,7 @@ const RecentProjects = () => {
                             id={item.id}
                         >
                             <div
-                                className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] ">
+                                className="relative flex items-center justify-center sm:w-[470px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] ">
                                 <div
                                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                                     style={{backgroundColor: "#13162D"}}
@@ -39,16 +39,17 @@ const RecentProjects = () => {
                                 <img
                                     src={item.img}
                                     alt="cover"
-                                    className="z-10 absolute bottom-0 rounded-2xl h-5/6 w-5/6 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                    style={{height: "97%", width: "97%"}}
+                                    className="z-10 absolute bottom-0 rounded-2xl  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                                 />
                             </div>
 
-                            <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 pt-5">
+                            <h1 className="font-bold lg:text-xl md:text-lg text-base line-clamp-1 pt-5">
                                 {item.title}
                             </h1>
 
                             <p
-                                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                                className="lg:text-lg lg:font-normal font-light text-sm line-clamp-2"
                                 style={{
                                     color: "#BEC1DD",
                                     margin: "1vh 0",
@@ -74,7 +75,7 @@ const RecentProjects = () => {
                                 </div>
 
                                 <div className="flex justify-center items-center">
-                                    <a className="flex lg:text-xl md:text-xs text-sm text-[#06b6d4]" href={item.link}
+                                    <a className="flex lg:text-xl md:text-xs text-sm text-purple" href={item.link}
                                        target={"_blank"}>
                                         Check Live Site
                                     </a>
